@@ -13,11 +13,11 @@ function Controls(props) {
 }
 
 function Dome() {
-  const texture = useLoader(THREE.TextureLoader, '/aa.jpg')
+  const texture = useLoader(THREE.TextureLoader, '/final.jpg')
   return (
     <mesh>
       <sphereBufferGeometry attach="geometry" args={[3, 60, 40]} />
-      <meshBasicMaterial attach="material" map={texture} side={THREE.BackSide} transparent opacity={0.6} />
+      <meshBasicMaterial attach="material" map={texture} side={THREE.BackSide} transparent opacity={1} />
     </mesh>
   )
 }
